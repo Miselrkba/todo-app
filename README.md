@@ -1,10 +1,10 @@
 # Todo aplikácia
-    git clone https://github.com/Miselrkba/todo.git
+    git clone https://github.com/Miselrkba/todo-app.git
     cd todo
     npm install
-    npm start
+    npm run dev
 
-#### Aplikácia beží na http://localhost:3000.
+#### Aplikácia beží na http://localhost:5173.
 
 
 ## Dodatočná funkcionalita:
