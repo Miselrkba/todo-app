@@ -1,6 +1,6 @@
 # Todo aplikácia
     git clone https://github.com/Miselrkba/todo-app.git
-    cd todo
+    cd todo-app
     npm install
     npm run dev
 
