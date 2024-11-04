@@ -11,5 +11,5 @@
 #### update tasku
 #### ukladanie statu do localstorage
 #### responzivita
-#### testy
+#### testy (npm run test)
     
