@@ -96,42 +96,6 @@
   margin-bottom: 0.625rem;
 }
 
-@media (max-width: 900px) {
-  .task-column {
-    flex: 1 1 45%;
-  }
-}
-
-@media (max-width: 600px) {
-  .task-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .task-column {
-    flex: 1 1 100%;
-    margin: 0.625rem 0;
-  }
-
-  .task-card button {
-    width: 100%;
-    margin: 0.313rem 0;
-  }
-
-  .add-task-button {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .task-column h2 {
-    font-size: 1.25rem;
-  }
-
-  .task-card p {
-    font-size: 0.9rem;
-  }
-}
-
 button {
   background-color: #4caf50;
   color: #fff;
@@ -141,7 +105,8 @@ button {
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.2s ease;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
 }
 
@@ -171,4 +136,39 @@ button:focus {
 
 .add-task-button:active {
   background-color: #0d47a1;
+}
+
+@media (max-width: 900px) {
+  .task-column {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .task-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .task-column {
+    flex: 1 1 100%;
+    margin: 0.625rem 0;
+  }
+
+  .task-card button {
+    min-width: 60%;
+    margin: 0.313rem 0;
+  }
+
+  .add-task-button {
+    box-sizing: border-box;
+  }
+
+  .task-column h2 {
+    font-size: 1.25rem;
+  }
+
+  .task-card p {
+    font-size: 0.9rem;
+  }
 }
