@@ -5,11 +5,12 @@
     npm run dev
 
 #### Aplikácia beží na http://localhost:5173.
-
+## Testy:
+    npm run test
 
 ## Dodatočná funkcionalita:
 #### update tasku
 #### ukladanie statu do localstorage
 #### responzivita
-#### testy (npm run test)
+#### testy
     
