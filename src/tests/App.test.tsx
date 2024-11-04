@@ -28,7 +28,7 @@ describe("App", () => {
     expect(screen.getByText("Test Task")).toBeInTheDocument();
   });
 
-  it("updates task status when status button is clicked", () => {
+  it('displays task name when "Pridať úlohu" button is clicked', () => {
     render(<App />);
     const addButton = screen.getByRole("button", { name: /pridať úlohu/i });
     fireEvent.click(addButton);
@@ -40,6 +40,19 @@ describe("App", () => {
     fireEvent.click(submitButton);
     const statusButton = screen.getByRole("button", { name: /štart/i });
     fireEvent.click(statusButton);
+    expect(screen.getByText("Test Task")).toBeInTheDocument();
+  });
+
+  it('edits task name when "Pridať úlohu" button is clicked', () => {
+    render(<App />);
+    const edit = screen.getByRole("button", { name: /upraviť/i });
+    fireEvent.click(edit);
+    const inputElement = screen.getByPlaceholderText(/názov úlohy/i);
+    fireEvent.change(inputElement, { target: { value: "Test Task" } });
+    const submitButton = screen.getByRole("button", {
+      name: /uložiť/i,
+    });
+    fireEvent.click(submitButton);
     expect(screen.getByText("Test Task")).toBeInTheDocument();
   });
 
