@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { ITask } from "./types";
-import AddTaskButton from "./components/AddTaskButton";
 import TaskColumn from "./components/TaskColumn";
 import "./App.css";
 import { nanoid } from "nanoid";
@@ -62,7 +61,9 @@ const App: React.FC = () => {
   return (
     <div className="app">
       <h1>Zoznam úloh</h1>
-      <AddTaskButton onClick={() => setIsFormOpen(true)} />
+      <button className="add-task-button" onClick={() => setIsFormOpen(true)}>
+        Pridať úlohu
+      </button>
       {isFormOpen && (
         <TaskFormModal
           onClose={() => setIsFormOpen(false)}

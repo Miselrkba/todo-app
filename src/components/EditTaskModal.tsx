@@ -13,7 +13,7 @@ const EditTaskModal: React.FC<EditTaskModalProps> = ({ task, onClose, onUpdate }
 
   const handleUpdate = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    if (title.trim() === '') {
+    if (title.length === 0) {
       setError('Nemôžete nechať názov úlohy prázdny');
     } else {
       const updatedTask = { ...task, title: title.trim() };

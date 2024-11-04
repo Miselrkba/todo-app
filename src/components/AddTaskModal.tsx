@@ -11,7 +11,7 @@ const TaskFormModal: React.FC<TaskFormModalProps> = ({ addTask, onClose }) => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (title.trim() === "") {
+    if (title.length === 0) {
       setError("Nemôžete pridať prázdnu úlohu");
     } else {
       addTask(title);
