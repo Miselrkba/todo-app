@@ -11,4 +11,5 @@
 #### update tasku
 #### ukladanie statu do localstorage
 #### responzivita
+#### testy
     
