@@ -31,7 +31,7 @@ const TaskFormModal: React.FC<TaskFormModalProps> = ({ addTask, onClose }) => {
           onChange={(e) => setTitle(e.target.value)}
         />
         {error && <p className="error-text">{error}</p>}
-        <button type="submit">Pridať úlohu</button>
+        <button type="submit">Pridať</button>
         <button type="button" onClick={onClose}>
           Zrušiť
         </button>
